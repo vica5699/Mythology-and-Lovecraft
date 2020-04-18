@@ -27,6 +27,14 @@ margin: auto;
 box-shadow: indigo;
 
 }
+img1 src {
+    height: 200 px;
+    width: 200px;
+}
+img2 src {
+    height:200 px;
+    width: 200 px;
+}
 
 p2{
     background-color: goldenrod;
