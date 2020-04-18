@@ -31,7 +31,7 @@ box-shadow: indigo;
 img {
     margin: auto;
     height: auto;
-    width: 100px;
+    width: 30px;
 }
 .pics_in_a_row {
     display: flex;
