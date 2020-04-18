@@ -27,6 +27,14 @@ margin: auto;
 box-shadow: indigo;
 
 }
+img1 {
+    height: 300px;
+    width: 300px;
+}
+img2 {
+    height:300px;
+    width: 300px;
+}
 p2{
     background-color: goldenrod;
 }
