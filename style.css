@@ -28,12 +28,12 @@ box-shadow: indigo;
 
 }
 img1 {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 100%;
 }
 img2 {
-    height:100px;
-    width: 100px;
+    height:auto;
+    width: 100%;
 }
 p2{
     background-color: goldenrod;
