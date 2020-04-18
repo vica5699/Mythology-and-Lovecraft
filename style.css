@@ -29,13 +29,15 @@ box-shadow: indigo;
 }
 
 img1 {
-    height: 100 px;
-    width: 100px;
+    margin: auto;
+    height: 300px;
+    width: 300px;
 }
 
 img2 {
-    height: 100px;
-    width: 100px;
+    margin: auto;
+    height: 300px;
+    width: 300px;
 }
 p2{
     background-color: goldenrod;
