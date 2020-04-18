@@ -33,14 +33,15 @@ img {
     height: auto;
     width: 30px;
 }
-.pics_in_a_row {
-    display: flex;
-}
 .img1 {
-    flex: 1.3344;
+
+    height: auto;
+    width: 30px;
 }
 .img2 {
-    flex: 1.3345;
+   
+    height: auto;
+    width: 30px;
 }
 p2{
     background-color: goldenrod;
