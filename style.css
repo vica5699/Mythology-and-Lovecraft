@@ -28,15 +28,19 @@ box-shadow: indigo;
 
 }
 
-img "https://www.ancientworldmagazine.com/site/assets/files/1195/rubens-phaeton-1.1920x0.jpg"{
+img {
     margin: auto;
-    height: 100px;
+    height: auto;
     width: 100px;
 }
-img "https://www.thoughtco.com/thmb/lZdJdvFnlowiU8vJNiWlHr19lfw=/4000x2250/smart/filters:no_upscale()/GettyImages-11410491702-07f03ccd0eb54d36a9b62212cd2f55a1.jpg" {
-    margin: auto;
-    height: 100px;
-    width: 100px;
+.pics_in_a_row {
+    display: flex;
+}
+.img1 {
+    flex: 1.3344;
+}
+.img2 {
+    flex: 1.3345;
 }
 p2{
     background-color: goldenrod;
