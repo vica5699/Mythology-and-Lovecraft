@@ -28,11 +28,15 @@ box-shadow: indigo;
 
 }
 
-img {
+img1 {
     height: 100 px;
     width: 100px;
 }
 
+img2 {
+    height: 100px;
+    width: 100px;
+}
 p2{
     background-color: goldenrod;
 }
