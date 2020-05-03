@@ -34,3 +34,9 @@ p3{
     font-style: italic;
     font-size: 23px;
 }
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
