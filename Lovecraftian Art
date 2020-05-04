@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: georgia;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: #0d2926;
+  color: #d4cedb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #0d2926;
+  padding: 2px 16px;
+  color: #f2f2f2;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Lovecraftian Inspired Art</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://i.pinimg.com/originals/e5/3e/5c/e53e5c6d6f21bc79327ad1daf4a52aa3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://wallpapertag.com/wallpaper/full/7/7/3/429676-lovecraft-wallpapers-1920x1080-for-iphone-7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://img.wallpapersafari.com/desktop/1680/1050/41/37/syO1ET.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://lh3.googleusercontent.com/proxy/76XGQB8PDhXWZB24QHWZs65hMyvxanK90RPZ3FQXNfUOyTBBZX3QktFb3x7ekTcoEcXLs0S-cGFZq72-KKjd3mcjplU8uTKO-IfoTlQSjQ" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/17mtlj7ochml4jpg.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://live.staticflickr.com/4166/34024237164_df8f975339_b.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://i.pinimg.com/originals/e5/3e/5c/e53e5c6d6f21bc79327ad1daf4a52aa3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Clash of Worlds">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://wallpapertag.com/wallpaper/full/7/7/3/429676-lovecraft-wallpapers-1920x1080-for-iphone-7.jpg" style="width:100%" onclick="currentSlide(2)" alt="Skull and Creature">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://img.wallpapersafari.com/desktop/1680/1050/41/37/syO1ET.jpg" style="width:100%" onclick="currentSlide(3)" alt="World on Fire">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://lh3.googleusercontent.com/proxy/76XGQB8PDhXWZB24QHWZs65hMyvxanK90RPZ3FQXNfUOyTBBZX3QktFb3x7ekTcoEcXLs0S-cGFZq72-KKjd3mcjplU8uTKO-IfoTlQSjQ" style="width:100%" onclick="currentSlide(4)" alt="Road to Redemption">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/17mtlj7ochml4jpg.jpg" style="width:100%" onclick="currentSlide(5)" alt="What's That on the Horizon?">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://live.staticflickr.com/4166/34024237164_df8f975339_b.jpg" style="width:100%" onclick="currentSlide(6)" alt="Just a Little Further">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
