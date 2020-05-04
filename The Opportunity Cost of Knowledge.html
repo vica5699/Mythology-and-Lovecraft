@@ -1,31 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Opportunity Cost of Knowledge</title>
-  <style>
-   body {
-  background-color: black;
-  color: white;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  background-image: url("https://fc02.deviantart.net/fs70/f/2012/024/d/f/black_sphere_by_txvirus-d4ngrt7.jpg");
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
-  </style>
-  </head>
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+}
+
+/* Style the header */
+header {
+  background-image: url("https://cdn.lowgif.com/full/6a2eef97ae51886b-cool-dark-backgrounds-tumblr-awesome-dark-purple-backgrounds-tumblr.gif");
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f1f1f1;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  background: #262625;
+  padding: 20px;
+  width: 420px;
+  height: 500px;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  color: #f1f1f1;
+  
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Style the footer */
+footer {
+  background-image: url("https://cdn.lowgif.com/full/6a2eef97ae51886b-cool-dark-backgrounds-tumblr-awesome-dark-purple-backgrounds-tumblr.gif");
+  padding: 10px;
+  text-align: center;
+  color: dark grey;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
 
-<h1>The Opportunity Cost of Knowledge</h1>
-<h3>"And at last I resolved to scale that tower, fall though I might; since it were better to glimpse the sky and perish, than to live without ever beholding day." - H.P. Lovecraft</h3>
-<p>	Is ignorance really bliss? Plato would have said yes… until it isn’t. In the Greek philosopher’s timeless allegory of the cave, Plato tells the journey of a prisoner once chained to the point of immobility who then breaks free to discover that the world is not at all what he thought it was. At first he is confused, even a little scared. In time, he realizes how beautiful the world truly is. It is so much more than what he was able to comprehend during his imprisonment. He now longs to share this new world with the other prisoners, so he risks his life to give go back to the cave and enlighten the unenlightened. Rather than being met with cheers and treated like a hero, the other prisoners threaten to kill him if he tries to unchain them and show them the rest of the world. </p>
-  <p>	 What are we supposed to do with this? It is a pretty pessimistic view of humanity and their willingness to live in ignorance. Many people throughout history have spent many hours thinking of those men inside the cave who did not want to leave – even with a guide and assurance that there is something beyond. But I want to focus on the man who left the cave. He represents the person who looks beyond what others take as fact. He is not happy with complacency. He is the character that I think most of us wish we could be, but in reality, we are all more like the other prisoners. We are afraid of what we do not know. </p>
-  <p>	H. P. Lovecraft wrote a short story about a being who knew nothing about itself and lived in an awful castle. Through great struggle and determination, the being climbs and explores its’ way up a tower so that it may experience the moon and sun in real life. Once it does, it finds it beautiful. It also discovers a room full of people and when it makes itself known the people scatter in fear. It takes the creature a little time to realize that it is what the humans were afraid of. But in a happier ending than Plato’s Cave, the creature discovers more like him and they decide that they prefer to dwell in the darkness. </p>
-  <p>	Lovecraft’s character is able to find other’s like itself and finds some comradery in that. The whole ordeal felt worth it to the creature in the end. We do not know whether the enlightened prisoner regrets his decision, but I believe that Plato and other philosophers would say it is worth it. For some people, the struggle to experience enlightenment is the entire point of human life. However, some would say that losing their friends and family is not worth it. I do not think that either point is wrong, rather that it shows what people believe life is about. </p>
-  <p>	So, I pose this question to you, is the knowledge worth it?</p>
+
+
+<header>
+  <h2>The Opportunity Cost of Knowledge</h2>
+</header>
+
+<section>
+  <nav>
+  <img src="https://i.pinimg.com/originals/3b/db/14/3bdb14961e9f59750d44e74474805823.jpg" width="325px" >
+  </nav>
   
- <div>
-    <a href="https://vica5699.github.io/Mythology-and-Lovecraft/">Home</a>
-  </div>
+  <article>
+    <h1>"And at last I resolved to scale that tower, fall though I might; since it were better to glimpse the sky and perish, than to live without ever beholding day." - H.P. Lovecraft</h1>
+    <p>Is ignorance really bliss? Plato would have said yes… until it isn’t. In the Greek philosopher’s timeless allegory of the cave, Plato tells the journey of a prisoner once chained to the point of immobility who then breaks free to discover that the world is not at all what he thought it was. At first he is confused, even a little scared. In time, he realizes how beautiful the world truly is. It is so much more than what he was able to comprehend during his imprisonment. He now longs to share this new world with the other prisoners, so he risks his life to give go back to the cave and enlighten the unenlightened. Rather than being met with cheers and treated like a hero, the other prisoners threaten to kill him if he tries to unchain them and show them the rest of the world.</p>
+
+<p>What are we supposed to do with this? It is a pretty pessimistic view of humanity and their willingness to live in ignorance. Many people throughout history have spent many hours thinking of those men inside the cave who did not want to leave – even with a guide and assurance that there is something beyond. But I want to focus on the man who left the cave. He represents the person who looks beyond what others take as fact. He is not happy with complacency. He is the character that I think most of us wish we could be, but in reality, we are all more like the other prisoners. We are afraid of what we do not know.</p>
+
+<p>H. P. Lovecraft wrote a short story about a being who knew nothing about itself and lived in an awful castle. Through great struggle and determination, the being climbs and explores its’ way up a tower so that it may experience the moon and sun in real life. Once it does, it finds it beautiful. It also discovers a room full of people and when it makes itself known the people scatter in fear. It takes the creature a little time to realize that it is what the humans were afraid of. But in a happier ending than Plato’s Cave, the creature discovers more like him and they decide that they prefer to dwell in the darkness.</p>
+
+<p>Lovecraft’s character is able to find other’s like itself and finds some comradery in that. The whole ordeal felt worth it to the creature in the end. We do not know whether the enlightened prisoner regrets his decision, but I believe that Plato and other philosophers would say it is worth it. For some people, the struggle to experience enlightenment is the entire point of human life. However, some would say that losing their friends and family is not worth it. I do not think that either point is wrong, rather that it shows what people believe life is about.</p>
+
+<p>So, I pose this question to you, is the knowledge worth it?</p>
+  </article>
+</section>
+
+<footer>
+  <h3> <a href="https://vica5699.github.io/Mythology-and-Lovecraft/">Home</a></h3>
+</footer>
+
 </body>
 </html>
