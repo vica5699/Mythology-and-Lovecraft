@@ -32,6 +32,46 @@ nav {
   height: 500px;
 }
 
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #822721;
+  opacity: 80%;
+  overflow: hidden;
+  width: 350px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: wrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 
 article {
   float: left;
@@ -77,7 +117,13 @@ footer {
 
 <section>
   <nav>
-  <img src="https://i.pinimg.com/originals/3b/db/14/3bdb14961e9f59750d44e74474805823.jpg" width="325px" >
+ 
+  <div class="container">
+   <img src="https://i.pinimg.com/originals/3b/db/14/3bdb14961e9f59750d44e74474805823.jpg" width="325px" >
+  <div class="overlay">
+    <div class="text">Think about what Lovecraft is saying about knowledge:<br></br> <br>Is it positive or negative to be enlightened?</br> <br></br>What makes a monster?</div>
+  </div>
+</div>
   </nav>
   
   <article>
