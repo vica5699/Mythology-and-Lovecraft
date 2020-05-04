@@ -28,14 +28,24 @@
 </div>
         
 <div class="flex-container">
-  <div class="img1">
-        <img src="https://i.imgur.com/CTkmAB3.jpg" width="550" height="400">
+<div class="container">
+  <img src="https://i.imgur.com/CTkmAB3.jpg" width="550" height="400" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">"And at last I resolved to scale that tower, fall though I might; since it were better to glimpse the sky and perish, than to live without ever beholding day." - H.P. Lovecraft</div>
+  </div>
+  </div>
+      </div> 
+  
 
-    </div>
-   <div class="img2">
-            <img src="https://www.thoughtco.com/thmb/gINN4toBnJOaFHqIagA3BQQmcFQ=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-11410491702-07f03ccd0eb54d36a9b62212cd2f55a1.jpg" width="550" height="400">
+ <div class="flex-container"> 
+  <div class="container">
+            <img src="https://www.thoughtco.com/thmb/gINN4toBnJOaFHqIagA3BQQmcFQ=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-11410491702-07f03ccd0eb54d36a9b62212cd2f55a1.jpg" width="550" height="400" alt="Avatar" class="image">
+   <div class="overlay">
+    <div class="text">“It is the task of the enlightened not only to ascend to learning and to see the good but to be willing to descend again to those prisoners and to share their troubles and their honors, whether they are worth having or not. And this they must do, even with the prospect of death.” - Plato</div>
            </div>
 </div>
+  </div>
+  </div>
          
         <h2><b>Menu</b></h2>
 
@@ -63,6 +73,7 @@ realizes that it is the thing they are running from. <b>It</b> is the monster. T
 
 
 
+
 <style>
   /* Header/logo Title */
 .header {
@@ -85,6 +96,7 @@ realizes that it is the thing they are running from. <b>It</b> is the monster. T
   .flex-container {
   display: flex;
   background-color: black;
+  justify-content: center;
 }
 
 .flex-container > div {
@@ -92,6 +104,51 @@ realizes that it is the thing they are running from. <b>It</b> is the monster. T
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  align-item: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 80%;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: wrap; 
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
   
   .e1{
